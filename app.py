@@ -18,7 +18,7 @@ def return_predictions(model,scaler,sample_json):
 
 app=Flask(__name__)
 
-@app.route("/")
+@app.route("/",methods=['GET'])
 def index():
 	return '<h1>FLASK APP IS RUNNING</h1>'
 
